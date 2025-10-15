@@ -1,0 +1,136 @@
+TASK 1: f3 + GRADIENT DESCENT WITHOUT AND WITH GOLDEN SECTION
+WITHOUT GOLDEN SECTION:
+Error: Goal function value hasn't decreased for 10 iterations (algorithm diverged).
+Starting point: Point([0, 0])
+Minimum: Point([0.0, 0.0])
+Function value at minimum: 13.0
+Number of goal function calls: 11
+Number of gradient calls: 11
+--------------------------------------------------
+WITH GOLDEN SECTION:
+Starting point: Point([0, 0])
+Minimum: Point([1.9999997462314094, -2.999999619347114])
+Function value at minimum: 2.0929511726453027e-13
+Number of goal function calls: 39
+Number of gradient calls: 2
+--------------------------------------------------
+==================================================
+
+TASK 2: GRADIENT DESCENT VS NEWTON-RAPHSON METHOD FOR f1 AND f2
+Function 1
+GRADIENT DESCENT:
+Starting point: Point([-1.9, 2])
+Minimum: Point([1.0000009251072643, 1.0000018538521747])
+Function value at minimum: 8.571460748489038e-13
+Number of goal function calls: 149970
+Number of gradient calls: 3947
+--------------------------------------------------
+NEWTON-RAPHSON:
+Starting point: Point([-1.9, 2])
+Minimum: Point([0.9999999999995925, 0.9999999999991964])
+Function value at minimum: 1.7884093018942542e-25
+Number of goal function calls: 594
+Number of gradient calls: 15
+Number of hessian calls: 15
+--------------------------------------------------
+Function 2
+GRADIENT DESCENT:
+Starting point: Point([0.1, 0.3])
+Minimum: Point([3.999999648895193, 2.0000000503443944])
+Function value at minimum: 1.334128177052157e-13
+Number of goal function calls: 1027
+Number of gradient calls: 28
+--------------------------------------------------
+NEWTON-RAPHSON:
+Starting point: Point([0.1, 0.3])
+Minimum: Point([4.000000000000164, 2.0000000000000715])
+Function value at minimum: 4.7446828005422976e-26
+Number of goal function calls: 79
+Number of gradient calls: 2
+Number of hessian calls: 2
+--------------------------------------------------
+==================================================
+
+TASK 3: f4 + NEWTON-RAPHSON METHOD WITHOUT AND WITH GOLDEN SECTION
+WITHOUT GOLDEN SECTION:
+Starting point: Point([3, 3])
+Minimum: Point([-1.7692923542386314, 1.0])
+Function value at minimum: -4.219136248741586
+Number of goal function calls: 30
+Number of gradient calls: 19
+Number of hessian calls: 19
+--------------------------------------------------
+WITH GOLDEN SECTION:
+Starting point: Point([3, 3])
+Minimum: Point([-1.7692923537827727, 0.9999999789265759])
+Function value at minimum: -4.219136248741586
+Number of goal function calls: 236
+Number of gradient calls: 6
+Number of hessian calls: 6
+--------------------------------------------------
+Error: Goal function value hasn't decreased for 10 iterations (algorithm diverged).
+WITHOUT GOLDEN SECTION:
+Starting point: Point([1, 2])
+Minimum: Point([0.0, 1.0])
+Function value at minimum: 0.0
+Number of goal function calls: 13
+Number of gradient calls: 11
+Number of hessian calls: 11
+--------------------------------------------------
+WITH GOLDEN SECTION:
+Starting point: Point([1, 2])
+Minimum: Point([-1.7692923542386292, 1.000000000000007])
+Function value at minimum: -4.219136248741586
+Number of goal function calls: 234
+Number of gradient calls: 6
+Number of hessian calls: 6
+--------------------------------------------------
+==================================================
+
+TASK 4: f1 + GAUSS-NEWTON WITHOUT AND WITH GOLDEN SECTION
+WITHOUT GOLDEN SECTION:
+Starting point: Point([-1.9, 2])
+Minimum: Point([1.0, 1.0])
+Function value at minimum: 0.0
+Number of goal function calls: 5
+Number of jacobian calls: 3
+--------------------------------------------------
+WITH GOLDEN SECTION:
+Starting point: Point([-1.9, 2])
+Minimum: Point([1.0, 1.0])
+Function value at minimum: 0.0
+Number of goal function calls: 502
+Number of jacobian calls: 13
+--------------------------------------------------
+==================================================
+
+TASK 5: f_task5 + GAUSS-NEWTON METHOD WITH GOLDEN SECTION
+Starting point: Point([-2, 2])
+Minimum: Point([-0.7861513777574233, 0.6180339887498948])
+Function value at minimum: 1.232595164407831e-32
+Number of goal function calls: 197
+Number of jacobian calls: 5
+--------------------------------------------------
+Starting point: Point([2, 2])
+Minimum: Point([0.7861513777574233, 0.6180339887498948])
+Function value at minimum: 1.232595164407831e-32
+Number of goal function calls: 197
+Number of jacobian calls: 5
+--------------------------------------------------
+Error: Goal function value hasn't decreased for 10 iterations (algorithm diverged).
+Starting point: Point([2, -2])
+Minimum: Point([-0.003684462404636093, -1.4850259576477216])
+Function value at minimum: 3.658128279019258
+Number of goal function calls: 563
+Number of jacobian calls: 15
+--------------------------------------------------
+==================================================
+
+TASK 6: f_task6 + GAUSS-NEWTON METHOD WITH GOLDEN SECTION
+Starting point: Point([1, 1, 1])
+Minimum: Point([0.19343576680094762, 0.4591749680923141, 3.111037315302859])
+Function value at minimum: 0.38237509424465005
+Number of goal function calls: 1148
+Number of jacobian calls: 30
+--------------------------------------------------
+==================================================

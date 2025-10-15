@@ -1,0 +1,11 @@
+TASK 1:
+Optimal point: Point([0.01023321034574972, 0.010233341676590544]), Optimal value: 0.9898971984574392
+Optimal point: Point([1.9999999919092593, 2.000496340127305]), Optimal value: 4.00000101777705
+TASK 2:
+Optimal point: Point([0.010190582275390714, 0.010190963745117188]), Optimal value: 0.9898976738882191
+Optimal point: Point([1.9999996185302735, 2.000111389160156]), Optimal value: 4.0000015755092315
+TASK 3:
+Initial point does not satisfy inequality constraints.
+Applying inner point method...
+Initial point after inner point method: Point([1.0, 1.0])
+Optimal point: Point([2.0000228881835938, 0.9999752044677734]), Optimal value: 1.9999046337070467

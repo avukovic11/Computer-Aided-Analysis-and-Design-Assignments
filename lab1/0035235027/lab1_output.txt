@@ -1,0 +1,138 @@
+TASK 1:
+Matrix A (and B):
+ 2.658675 5465.645462 543.3645564564
+2.645466547 3.9645654 21.654601
+3.65466457 3.5489645 30.8765486545
+A==B: True
+
+Matrix B multiplied and divided by 30.57638536459:
+ 2.658675 5465.645462 543.3645564564
+2.645466547 3.9645654 21.654601
+3.65466457 3.5489645 30.8765486545
+A==B: True
+------------------------------------------------
+TASK 2:
+Ax = b
+Matrix A:
+ 3.0 9.0 6.0
+4.0 12.0 12.0
+1.0 -1.0 1.0
+Matrix b:
+ 12.0
+12.0
+1.0
+
+An error occurred in LU decomposition solution for x: Can't perform LU decomposition (division by 0).
+LUP solution for x:
+ 3.0
+1.0
+-1.0
+------------------------------------------------
+TASK 3:
+Ax = b
+Matrix A:
+ 1.0 2.0 3.0
+4.0 5.0 6.0
+7.0 8.0 9.0
+Matrix b:
+ 4.0
+27.0
+3.0
+
+An error occurred in LU decomposition solution for x: Can't perform backward substitution (division by 0).
+An error occurred in LUP decomposition solution for x: Can't perform backward substitution (division by 0).
+
+EXPLANATION: We can't solve for x because the rank of the matrix A is not full.
+------------------------------------------------
+TASK 4:
+Ax = b
+Matrix A:
+ 1e-06 3000000.0 2000000.0
+1000000.0 2000000.0 3000000.0
+2000000.0 1000000.0 2000000.0
+Matrix b:
+ 12000000.000001
+14000000.0
+10000000.0
+
+LU solution for x:
+ 1.000240445137024
+1.9993176390310476
+3.0010235414534288
+LUP solution for x:
+ 1.0000000000000002
+2.0000000000000004
+2.9999999999999996
+
+EXPLANATION: LUP decomposition gives us more precise results because it avoids with reordering of rows.
+------------------------------------------------
+TASK 5:
+Ax = b
+Matrix A:
+ 0.0 1.0 2.0
+2.0 0.0 3.0
+3.0 5.0 1.0
+Matrix b:
+ 6.0
+9.0
+3.0
+
+An error occurred in LU decomposition solution for x: Can't perform LU decomposition (division by 0).
+LUP solution for x:
+ -1.0362081563168128e-15
+5.329070518200752e-16
+3.0000000000000004
+
+EXPLANATION: Here we don't get a solution with LU because the pivot is 0, but with LUP that pivot is reordered so that we can get a solution. Still, we don't get the exact solution (0 0 3) because the double precision is not enough in this case. We could bypass it with a tolerance function (for example 1e-12).
+------------------------------------------------
+TASK 6:
+Ax = b
+Matrix A:
+ 4000000000.0 1000000000.0 3000000000.0
+4.0 2.0 7.0
+3e-10 5e-10 2e-10
+Matrix b:
+ 9000000000.0
+15.0
+1.5e-09
+
+An error occurred in LU decomposition solution for x: Can't perform backward substitution (division by 0).
+An error occurred in LUP decomposition solution for x: Can't perform backward substitution (division by 0).
+
+EXPLANATION: The matrix A is ill conditioned (big differences in values of the matrix). To fix the problem, we could scale the first and/or the last row of both A and b (for example, divide first row with 1e-9)
+------------------------------------------------
+TASK 7:
+Matrix A:
+ 1.0 2.0 3.0
+4.0 5.0 6.0
+7.0 8.0 9.0
+
+An error occurred in getting inverse of A: Can't perform backward substitution (division by 0).
+------------------------------------------------
+TASK 8:
+Matrix A:
+ 4.0 -5.0 -2.0
+5.0 -6.0 -2.0
+-8.0 9.0 3.0
+
+Inverse of A:
+ -0.0 -3.0 -2.0
+1.0 -4.0 -2.0
+-3.0 4.0 1.0
+------------------------------------------------
+TASK 9:
+Matrix A:
+ 4.0 -5.0 -2.0
+5.0 -6.0 -2.0
+-8.0 9.0 3.0
+
+Determinant of A: 1.0
+------------------------------------------------
+TASK 10:
+Matrix A:
+ 3.0 9.0 6.0
+4.0 12.0 12.0
+1.0 -1.0 1.0
+
+Determinant of A: 48.0
+------------------------------------------------
